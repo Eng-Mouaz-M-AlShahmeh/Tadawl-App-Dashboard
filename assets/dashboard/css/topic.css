@@ -1,0 +1,229 @@
+
+/* ===================================
+3. Responsive media
+==================================== */
+
+.video-container, .map-container, .embed-container {
+    position: relative;
+    margin: 0 0 15px 0;
+    padding-bottom: 51%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    border: none;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed,
+.video-container iframe,
+.map-container iframe,
+.map-container object,
+.map-container embed,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    border: none;
+}
+
+img.img-polaroid {
+    margin: 0 0 20px 0;
+}
+
+.img-box {
+    max-width: 100%;
+}
+
+
+/* ============================
+11. Forms
+============================= */
+
+/* --- contact form  ---- */
+form#contactform input[type="text"] {
+    width: 100%;
+    border: 1px solid #f5f5f5;
+    min-height: 40px;
+    padding-left: 20px;
+    font-size: 13px;
+    padding-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+form#contactform textarea {
+    border: 1px solid #f5f5f5;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 13px;
+    padding-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+form#contactform .validation {
+    font-size: 11px;
+}
+
+.validation {
+    display: none;
+    position: relative;
+    margin: 4px 0 10px;
+    font-size: 12px;
+    padding: 5px 10px;
+    background: #faebcc;
+    border: 1px solid #faebcc;
+    color: #8a6d3b;
+    border-radius: 5px;
+}
+
+.validation:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #faebcc;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+}
+
+#sendmessage, #subscribesendmessage, #ordersendmessage {
+    color: green !important;
+    border: 1px solid #b1deca;
+    background: #e7fff7;
+    display: none;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#errormessage, #ordererrormessage, #subscribeerrormessage {
+    color: red;
+    display: none;
+    border: 1px solid #ea9c97;
+    background: #ffe4e9;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#sendmessage.show, #ordersendmessage.show, #subscribesendmessage.show, #errormessage.show, #ordererrormessage.show, #subscribeerrormessage.show, .show {
+    display: block;
+}
+
+/* --- comment form ---- */
+form#commentform input[type="text"] {
+    width: 100%;
+    min-height: 40px;
+    padding-left: 20px;
+    font-size: 13px;
+    padding-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+
+}
+
+form#commentform textarea {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 13px;
+    padding-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+/* --- search form --- */
+.search {
+    float: right;
+    margin: 35px 0 0;
+    padding-bottom: 0;
+}
+
+#inner-headline form.input-append {
+    margin: 0;
+    padding: 0;
+}
+
+.field-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-bottom: 0 !important;
+}
+/* ===================================
+6. Sliders
+==================================== */
+/* --- flexslider --- */
+
+#featured .flexslider {
+    padding: 0;
+    margin: 0px;
+    background: #fff;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.flex-caption {
+    background: none;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
+    zoom: 1;
+}
+
+.flex-caption {
+    bottom: 55px;
+    color: #fff;
+    margin: 0;
+    padding: 25px 25px 25px 30px;
+    position: absolute;
+    right: 10%;
+    width: 295px;
+    opacity: 0.85;
+}
+
+.flex-caption h3 {
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.flex-caption p {
+    margin: 0 0 15px;
+}
+img{
+    max-width: 100%;
+}
+
+/* google map */
+#google-map {
+    position: relative;
+    height: 400px;
+}
